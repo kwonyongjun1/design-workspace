@@ -1,3 +1,30 @@
 .selector-for-some-widget {
     box-sizing: content-box;
 }
+
+header{
+    width: 100%;
+}
+
+body {
+    background-color: #212121;
+    color: white; /* 텍스트 색상을 밝은 색으로 변경 (예: 흰색) */
+}
+
+.left-wrap {
+    width: 400px;
+    margin: 50px;
+    padding: 30px;
+    background: rgb(64, 64, 64);
+    box-shadow: 0 0 20px black;
+    font: 15px/2 Georgia, Serif;
+}
+
+.middle-wrap {
+    width: 400px;
+    margin: 50px;
+    padding: 30px;
+    background: rgb(64, 64, 64);
+    box-shadow: 0 0 20px black;
+    font: 15px/2 Georgia, Serif;
+}
