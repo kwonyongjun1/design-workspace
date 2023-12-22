@@ -22,11 +22,20 @@
       </header>
       <div class = "d-flex">
         <!-- 커밋 컴포넌트 -->
-        <div class = "left-wrap p-2">
-          커밋
-        </div>
+        <section class = "left-wrap" style = "width : 35%">
+          <article class="commit-message">
+            <header>
+              <button id="emoji">🔒️</button>
+              <button id="type">Feat</button>
+              <button id="scope">(scope)</button>:
+              <input type="text" id="shortSummary" placeholder="make log easier (#123)">
+            </header>
+            <textarea id="commitBody" ></textarea>
+            <textarea id="commitFooter"></textarea>
+          </article>
+        </section>
         <!-- list 컴포넌트 -->
-        <div class = "middle-wrap w500">
+        <div class = "middle-wrap" style = "width : 65%">
           <div class="container text-center">
             <div class="grid text-center">
               <div class="g-col-6 g-col-md-4">
@@ -41,6 +50,8 @@
             </div>
           </div>
         </div>
+
+
       </div>
     </div>
   </body>
