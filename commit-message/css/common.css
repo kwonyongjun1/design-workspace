@@ -1,5 +1,5 @@
 * {
-  font-family: emoji;
+  font-family: emoji !important;
   font-weight: 100;
 }
 
@@ -23,7 +23,7 @@ body .left-wrap {
   padding: 30px;
   background: rgb(64, 64, 64);
   box-shadow: 0 0 20px black;
-  font: 15px/2 Georgia, Serif;
+  font: 15px/2;
 }
 body .left-wrap header {
   text-align: center;
@@ -86,6 +86,7 @@ body .left-wrap .commit-message .footer button {
   background: rgb(64, 64, 64);
   width: 100%;
   text-align: left;
+  color: white;
 }
 body .middle-wrap {
   width: 400px;
