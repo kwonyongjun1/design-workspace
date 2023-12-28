@@ -1,3 +1,7 @@
+* {
+  font-family: emoji;
+}
+
 .selector-for-some-widget {
   box-sizing: content-box;
 }
@@ -15,11 +19,14 @@ body {
 }
 body .left-wrap {
   width: 30em;
-  margin-top: 50px;
   padding: 30px;
   background: rgb(64, 64, 64);
   box-shadow: 0 0 20px black;
   font: 15px/2 Georgia, Serif;
+}
+body .left-wrap header {
+  text-align: center;
+  font-weight: 700;
 }
 body .left-wrap .commit-message {
   display: flex;
@@ -31,27 +38,53 @@ body .left-wrap .commit-message {
 body .left-wrap .commit-message header {
   width: 100%;
   text-align: -webkit-left;
+  padding: 10px;
 }
 body .left-wrap .commit-message header button {
   border-radius: 10px;
+  border: 1px solid #efefef;
+  background: rgb(94, 94, 94);
+  color: #efefef;
 }
 body .left-wrap .commit-message header input {
   border-radius: 10px;
+  border: 1px solid #efefef;
+  background: rgb(94, 94, 94);
+  color: #efefef;
 }
 body .left-wrap .commit-message header #scope {
   width: 65px;
+  border: 1px solid #efefef;
+  background: rgb(94, 94, 94);
+  color: #efefef;
+}
+body .left-wrap .commit-message header #shortSummary {
+  width: 200px;
+}
+body .left-wrap .commit-message .body {
+  padding: 10px;
 }
 body .left-wrap .commit-message .body textarea {
   width: 100%;
-  margin-top: 10px;
   border: none;
   resize: none;
+  padding: 10px;
 }
 body .left-wrap .commit-message .body #commitBody {
-  height: 200px;
+  height: 180px;
 }
 body .left-wrap .commit-message .body #commitFooter {
-  height: 70px;
+  margin-top: 10px;
+  height: 90px;
+}
+body .left-wrap .commit-message .footer {
+  background: rgb(64, 64, 64);
+  padding-top: 10px;
+}
+body .left-wrap .commit-message .footer button {
+  background: rgb(64, 64, 64);
+  width: 100%;
+  text-align: left;
 }
 body .middle-wrap {
   width: 400px;
@@ -67,6 +100,18 @@ textarea {
   border: none;
   outline: none;
   color: #efefef;
+}
+
+.form-check input {
+  margin-top: 7px !important;
+}
+.form-check label {
+  padding-right: 10px;
+}
+
+.setting-area {
+  display: flex;
+  padding: 10px;
 }
 
 /*# sourceMappingURL=common.css.map */

@@ -19,26 +19,38 @@
     <!-- 커밋 컴포넌트 -->
     <section class = "left-wrap">
       <header>
-        commit message
+        <h1>Commit-Message</h1>
       </header>
-      <article class="commit-message">
-        <!-- switch button -->
+      <div class="setting-area">
+        <div class="form-check form-switch">
+          <label class="form-check-label" for="flexSwitchCheckChecked">EmojiAuto</label>
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+        </div>
         <div class="form-check form-switch">
           <label class="form-check-label" for="flexSwitchCheckChecked">Auto</label>
           <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
         </div>
+      </div>
+      <article class="commit-message">
         <header>
           <button id="emoji">🔒️</button>
           <button id="type">Feat</button>
-          <input type="text" id="scope" placeholder="(scope)"></button>:
+          <input type="text" id="scope" placeholder="(scope)"></button>
+           :
           <input type="text" id="shortSummary" placeholder="make log easier (#123)">
         </header>
         <div class = "body">
-          <textarea id="commitBody" ></textarea>
-          <textarea id="commitFooter"></textarea>
+          <textarea id="commitBody" placeholder="body"></textarea>
+          <textarea id="commitFooter" placeholder="footer"></textarea>
         </div>
-        <button> copy </button>
-        <button> history </button>  
+        <div class="footer">
+          <button>
+            copy
+          </button>
+          <button>
+            history
+          </button>
+        </div>
       </article>
     </section>
         <!-- list 컴포넌트 -->
