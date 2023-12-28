@@ -87,6 +87,8 @@ body .left-wrap .commit-message .footer button {
   width: 100%;
   text-align: left;
   color: white;
+  border: none;
+  font-size: xx-large;
 }
 body .middle-wrap {
   width: 400px;
