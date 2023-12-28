@@ -12,6 +12,18 @@ body {
 }
 
 .left-wrap {
+    min-width: 26.5em;
+    margin: 50px;
+    padding: 30px;
+    background: rgb(64, 64, 64);
+    box-shadow: 0 0 20px black;
+    font: 15px/2 Georgia, Serif;
+}
+
+.commit-message{
+    text-align: -webkit-center
+}
+.middle-wrap {
     width: 400px;
     margin: 50px;
     padding: 30px;
@@ -20,11 +32,13 @@ body {
     font: 15px/2 Georgia, Serif;
 }
 
-.middle-wrap {
-    width: 400px;
-    margin: 50px;
-    padding: 30px;
-    background: rgb(64, 64, 64);
-    box-shadow: 0 0 20px black;
-    font: 15px/2 Georgia, Serif;
+textarea{
+    background-color: rgb(94, 94, 94);
+    border: none;
+    outline: none;
+    color: #efefef;
+}
+
+.wd330{
+    width: 330px;
 }
