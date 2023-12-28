@@ -5,23 +5,56 @@
 body {
     background-color: #212121;
     color: white;
-
-    .container{
-        header{
-            width: 100%;
-        }
-    }
+    display: flex;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    height: 100vh;
 
     .left-wrap {
-        min-width: 26.5em;
-        margin: 50px;
+        width: 30em;
+        margin-top: 50px;
         padding: 30px;
         background: rgb(64, 64, 64);
         box-shadow: 0 0 20px black;
         font: 15px/2 Georgia, Serif;
 
         .commit-message{
-            text-align: -webkit-center
+            display: flex;
+            flex-direction: column;
+            text-align: -webkit-center;
+            background-color: rgb(94, 94, 94);
+            border-radius : 10px;
+
+            header{
+                width: 100%;
+                text-align: -webkit-left;
+                button {
+                    border-radius : 10px;
+                }
+                input{
+                    border-radius : 10px;
+                }
+                #scope{
+                    width : 65px;
+                }
+            }
+            .body{
+                textarea{
+                    width: 100%;
+                    margin-top: 10px;
+                    border: none;
+                    resize: none;
+                }
+                #commitBody{
+                    height: 200px;
+                }
+                #commitFooter{
+                    height: 70px;
+                }
+            }
         }
     }
 
@@ -42,9 +75,6 @@ textarea{
     color: #efefef;
 }
 
-.wd330{
-    width: 330px;
-}
 
 
 

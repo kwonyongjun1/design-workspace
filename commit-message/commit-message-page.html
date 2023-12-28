@@ -16,42 +16,40 @@
     
   </script>
   <body>
-    <div class="container"> 
+    <!-- 커밋 컴포넌트 -->
+    <section class = "left-wrap">
       <header>
         commit message
       </header>
-      <div class = "d-flex">
-        <!-- 커밋 컴포넌트 -->
-        <section class = "left-wrap">
-          <article class="commit-message">
-            <header>
-              <button id="emoji">🔒️</button>
-              <button id="type">Feat</button>
-              <button id="scope">(scope)</button>:
-              <input type="text" id="shortSummary" placeholder="make log easier (#123)">
-            </header>
-            <textarea class = "wd330" id="commitBody" ></textarea>
-            <textarea class = "wd330" id="commitFooter"></textarea>
-          </article>
-        </section>
+      <article class="commit-message">
+        <header>
+          <button id="emoji">🔒️</button>
+          <button id="type">Feat</button>
+          <input type="text" id="scope" placeholder="(scope)"></button>:
+          <input type="text" id="shortSummary" placeholder="make log easier (#123)">
+        </header>
+        <div class = "body">
+          <textarea id="commitBody" ></textarea>
+          <textarea id="commitFooter"></textarea>
+        </div>
+        <button> copy </button>
+        <button> history </button>  
+      </article>
+    </section>
         <!-- list 컴포넌트 -->
-        <div class = "middle-wrap" style = "width : 65%">
-          <div class="container text-center">
-            <div class="grid text-center">
-              <div class="g-col-6 g-col-md-4">
-                Column
-              </div>
-              <div class="g-col-6 g-col-md-4">
-                Column
-              </div>
-              <div class="g-col-6 g-col-md-4">
-                Column
-              </div>
-            </div>
+    <section class = "middle-wrap">
+      <div class="container text-center">
+        <div class="grid text-center">
+          <div class="g-col-6 g-col-md-4">
+            Column
+          </div>
+          <div class="g-col-6 g-col-md-4">
+            Column
+          </div>
+          <div class="g-col-6 g-col-md-4">
+            Column
           </div>
         </div>
-
-
       </div>
     </div>
   </body>
