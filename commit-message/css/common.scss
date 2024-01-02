@@ -115,7 +115,16 @@ body {
                 font-size: 150%;
                 border: solid #333;
                 transition: border-color 0.3s ease;
-                line-height: 100px;
+                line-height: 35px;
+                display: flex;
+
+                .emoji{
+                    width: 2.5em;
+                }
+
+                .emoji-detail{
+                    padding: 5px 20px;
+                }
             }
             .grid-item:hover{
                 border-color:white;

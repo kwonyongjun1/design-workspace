@@ -111,7 +111,14 @@ body .middle-wrap .grid-container .grid-item {
   font-size: 150%;
   border: solid #333;
   transition: border-color 0.3s ease;
-  line-height: 100px;
+  line-height: 35px;
+  display: flex;
+}
+body .middle-wrap .grid-container .grid-item .emoji {
+  width: 2.5em;
+}
+body .middle-wrap .grid-container .grid-item .emoji-detail {
+  padding: 5px 20px;
 }
 body .middle-wrap .grid-container .grid-item:hover {
   border-color: white;
