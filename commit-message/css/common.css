@@ -91,10 +91,12 @@ body .left-wrap .commit-message .footer button {
   font-size: xx-large;
 }
 body .middle-wrap {
+  height: calc(100vh - 100px);
   margin: 50px;
   padding: 30px;
   background: rgb(64, 64, 64);
   box-shadow: 0 0 20px black;
+  overflow-y: auto;
   font: 15px/2 Georgia, Serif;
 }
 body .middle-wrap .grid-container {
@@ -104,46 +106,30 @@ body .middle-wrap .grid-container {
 }
 body .middle-wrap .grid-container .grid-item {
   background-color: rgb(94, 94, 94);
-  border-radius: 5px;
+  border-radius: 25px;
   padding: 20px;
   font-size: 150%;
+  border: solid #333;
+  transition: border-color 0.3s ease;
+  line-height: 100px;
 }
 body .middle-wrap .grid-container .grid-item:hover {
   border-color: white;
 }
 @media screen and (min-width: 1200px) {
   body .middle-wrap .grid-container {
-    display: grid;
     grid-template-columns: 280px 280px;
-    grid-gap: 10px;
   }
   body .middle-wrap .grid-container .grid-item {
-    background-color: rgb(94, 94, 94);
-    border-radius: 5px;
-    padding: 20px;
     font-size: 150%;
-  }
-  body .middle-wrap .grid-container .grid-item:hover {
-    border-color: white;
   }
 }
 @media screen and (min-width: 1500px) {
   body .middle-wrap .grid-container {
-    display: grid;
     grid-template-columns: 280px 280px 280px;
-    grid-gap: 10px;
   }
   body .middle-wrap .grid-container .grid-item {
-    background-color: rgb(94, 94, 94);
-    border-radius: 5px;
-    padding: 20px;
     font-size: 150%;
-    line-height: 100px;
-    border: solid #333;
-    transition: border-color 0.3s ease;
-  }
-  body .middle-wrap .grid-container .grid-item:hover {
-    border-color: white;
   }
 }
 
