@@ -116,14 +116,20 @@ body {
                 border: solid #333;
                 transition: border-color 0.3s ease;
                 line-height: 35px;
-                display: flex;
+                position: relative;
+                cursor: pointer;
+                display: -webkit-box;
 
                 .emoji{
+                    display: flex;
                     width: 2.5em;
+                    align-items: center;
                 }
 
                 .emoji-detail{
-                    padding: 5px 20px;
+                    -webkit-box-flex: 1;
+                    font-size: 18px;
+                    text-align: left;
                 }
             }
             .grid-item:hover{

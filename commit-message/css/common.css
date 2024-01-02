@@ -112,13 +112,19 @@ body .middle-wrap .grid-container .grid-item {
   border: solid #333;
   transition: border-color 0.3s ease;
   line-height: 35px;
-  display: flex;
+  position: relative;
+  cursor: pointer;
+  display: -webkit-box;
 }
 body .middle-wrap .grid-container .grid-item .emoji {
+  display: flex;
   width: 2.5em;
+  align-items: center;
 }
 body .middle-wrap .grid-container .grid-item .emoji-detail {
-  padding: 5px 20px;
+  -webkit-box-flex: 1;
+  font-size: 18px;
+  text-align: left;
 }
 body .middle-wrap .grid-container .grid-item:hover {
   border-color: white;
