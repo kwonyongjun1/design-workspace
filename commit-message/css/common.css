@@ -98,6 +98,7 @@ body .middle-wrap {
   overflow-y: auto;
   font: 15px/2 Georgia, Serif;
   width: calc(100% - 30em - 65px);
+  min-width: 408px;
 }
 body .middle-wrap .grid-container {
   display: grid;
@@ -124,13 +125,10 @@ body .middle-wrap .grid-container .grid-item .emoji {
   padding: 10px;
 }
 body .middle-wrap .grid-container .grid-item .emoji-detail {
-  -webkit-box-flex: 1;
   font-size: 14px;
   text-align: left;
   line-height: 3;
-  white-space: normal;
-  display: -webkit-box;
-  min-height: 59px;
+  width: 15em;
 }
 body .middle-wrap .grid-container .grid-item:hover {
   border-color: white;
@@ -147,7 +145,7 @@ body .middle-wrap .grid-container .grid-item:hover {
 }
 @media screen and (min-width: 1700px) {
   body .middle-wrap .grid-container {
-    grid-template-columns: 280px 280px 280px 280px;
+    grid-template-columns: 20em 20em 20em 20em;
   }
 }
 

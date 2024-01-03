@@ -104,7 +104,8 @@ body {
         overflow-y: auto;
         font: 15px/2 Georgia, Serif;
         width: calc(100% - 30em - 65px);
-
+        min-width: 408px;
+        
         .grid-container{
             display: grid;
             grid-template-columns: 280px;
@@ -130,13 +131,10 @@ body {
                 }
 
                 .emoji-detail{
-                    -webkit-box-flex: 1;
                     font-size: 14px;
                     text-align: left;
                     line-height: 3; 
-                    white-space: normal;     
-                    display: -webkit-box; 
-                    min-height: 59px;
+                    width: 15em;
                 }
             }
             .grid-item:hover{
@@ -155,7 +153,7 @@ body {
         }
         @media screen and (min-width: 1700px){
             .grid-container{
-                grid-template-columns: 280px 280px 280px 280px;
+                grid-template-columns: 20em 20em 20em 20em;
             }
         }
     }
