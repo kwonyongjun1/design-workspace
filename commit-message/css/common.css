@@ -25,6 +25,9 @@ body .left-wrap header {
   text-align: center;
   font-weight: 700;
 }
+body .left-wrap header span {
+  font-size: xxx-large;
+}
 body .left-wrap .commit-message {
   display: flex;
   flex-direction: column;
@@ -94,11 +97,13 @@ body .middle-wrap {
   box-shadow: 0 0 20px black;
   overflow-y: auto;
   font: 15px/2 Georgia, Serif;
+  width: calc(100% - 30em - 65px);
 }
 body .middle-wrap .grid-container {
   display: grid;
   grid-template-columns: 280px;
   grid-gap: 10px;
+  place-content: center;
 }
 body .middle-wrap .grid-container .grid-item {
   background-color: rgb(94, 94, 94);
@@ -138,6 +143,11 @@ body .middle-wrap .grid-container .grid-item:hover {
 @media screen and (min-width: 1500px) {
   body .middle-wrap .grid-container {
     grid-template-columns: 280px 280px 280px;
+  }
+}
+@media screen and (min-width: 1700px) {
+  body .middle-wrap .grid-container {
+    grid-template-columns: 280px 280px 280px 280px;
   }
 }
 

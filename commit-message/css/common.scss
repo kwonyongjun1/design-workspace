@@ -24,6 +24,10 @@ body {
         header{
             text-align: center;
             font-weight: 700;
+
+            span{
+                font-size: xxx-large;
+            }
         }
         .commit-message{
             display: flex;
@@ -99,11 +103,13 @@ body {
         box-shadow: 0 0 20px black;
         overflow-y: auto;
         font: 15px/2 Georgia, Serif;
+        width: calc(100% - 30em - 65px);
 
         .grid-container{
             display: grid;
             grid-template-columns: 280px;
             grid-gap: 10px;
+            place-content: center;
             .grid-item {
                 background-color: rgb(94, 94, 94);
                 border-radius: 15px;
@@ -145,6 +151,11 @@ body {
         @media screen and (min-width: 1500px){
             .grid-container{
                 grid-template-columns: 280px 280px 280px;
+            }
+        }
+        @media screen and (min-width: 1700px){
+            .grid-container{
+                grid-template-columns: 280px 280px 280px 280px;
             }
         }
     }
