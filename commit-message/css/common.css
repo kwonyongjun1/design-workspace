@@ -104,13 +104,14 @@ body .middle-wrap .grid-container {
 body .middle-wrap .grid-container .grid-item {
   background-color: rgb(94, 94, 94);
   border-radius: 15px;
-  font-size: 150%;
+  font-size: 200%;
   border: solid #333;
   transition: border-color 0.3s ease;
   line-height: 55px;
   position: relative;
   cursor: pointer;
   display: -webkit-box;
+  min-height: 67px;
 }
 body .middle-wrap .grid-container .grid-item .emoji {
   display: flex;
@@ -133,16 +134,10 @@ body .middle-wrap .grid-container .grid-item:hover {
   body .middle-wrap .grid-container {
     grid-template-columns: 280px 280px;
   }
-  body .middle-wrap .grid-container .grid-item {
-    font-size: 150%;
-  }
 }
 @media screen and (min-width: 1500px) {
   body .middle-wrap .grid-container {
     grid-template-columns: 280px 280px 280px;
-  }
-  body .middle-wrap .grid-container .grid-item {
-    font-size: 150%;
   }
 }
 
