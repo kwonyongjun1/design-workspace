@@ -92,8 +92,8 @@ body {
     }
 
     .middle-wrap {
-        height: calc(100vh - 100px);;
-        margin: 50px;
+        height: calc(100vh - 40px);;
+        margin: 20px;
         padding: 30px;
         background: rgb(64, 64, 64);
         box-shadow: 0 0 20px black;
@@ -106,26 +106,29 @@ body {
             grid-gap: 10px;
             .grid-item {
                 background-color: rgb(94, 94, 94);
-                border-radius: 25px;
-                padding: 20px;
+                border-radius: 15px;
                 font-size: 150%;
                 border: solid #333;
                 transition: border-color 0.3s ease;
-                line-height: 35px;
+                line-height: 55px;
                 position: relative;
                 cursor: pointer;
                 display: -webkit-box;
 
                 .emoji{
                     display: flex;
-                    width: 2.5em;
-                    align-items: center;
+                    width: 2.8em;
+                    place-content: center;
+                    padding: 10px;
                 }
 
                 .emoji-detail{
                     -webkit-box-flex: 1;
-                    font-size: 18px;
+                    font-size: 14px;
                     text-align: left;
+                    letter-spacing: -1px;
+                    line-height: 3; /* 또는 다른 숫자나 단위 사용 가능 */
+                    text-overflow: ellipsis;
                 }
             }
             .grid-item:hover{
