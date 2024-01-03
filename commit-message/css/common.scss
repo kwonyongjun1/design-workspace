@@ -127,9 +127,10 @@ body {
                     -webkit-box-flex: 1;
                     font-size: 14px;
                     text-align: left;
-                    letter-spacing: -1px;
-                    line-height: 3; /* 또는 다른 숫자나 단위 사용 가능 */
-                    text-overflow: ellipsis;
+                    line-height: 3; 
+                    white-space: normal;     
+                    display: -webkit-box; 
+                    min-height: 59px;
                 }
             }
             .grid-item:hover{

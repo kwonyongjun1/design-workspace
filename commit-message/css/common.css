@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   font-family: emoji !important;
   font-weight: 100;
@@ -123,9 +122,10 @@ body .middle-wrap .grid-container .grid-item .emoji-detail {
   -webkit-box-flex: 1;
   font-size: 14px;
   text-align: left;
-  letter-spacing: -1px;
-  line-height: 3; /* 또는 다른 숫자나 단위 사용 가능 */
-  text-overflow: ellipsis;
+  line-height: 3;
+  white-space: normal;
+  display: -webkit-box;
+  min-height: 59px;
 }
 body .middle-wrap .grid-container .grid-item:hover {
   border-color: white;
